@@ -25,4 +25,4 @@ jobs:
       - run: npm ci
       - run: npm run build
       # Deploy
-      - run: cd dist && rsync -r -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" . root@94.228.118.222:/var/www/tmptest
+      - run: cd dist && rsync -r -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" . root@94.228.118.222:/var/www/public/frontend
